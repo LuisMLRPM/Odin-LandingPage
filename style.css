@@ -1,0 +1,85 @@
+
+/* Outlines */
+
+body,
+header,
+header .links,
+.section,
+footer,
+div {
+    border: 1px solid red;
+}
+
+/* Colors & Text Formatting */
+
+.upper-union,
+footer {
+    background-color: #1f2937;
+}
+
+.section.sec-3 {
+    background-color: #E5E7EB;
+}
+
+/* Margins, Padding, Dimensions, etc.*/
+
+body {
+    margin: 0;
+    min-height: 98vh;
+    /* width: 90%; */
+}
+
+.upper-union,
+.section,
+footer {
+    padding: 0 10%;
+}
+
+header,
+div,
+footer {
+    width: 80%;
+}
+
+header,
+.section.sec-1 {
+    padding: 2% 0%;
+}
+
+/* Flex Blocks */
+
+body,
+header,
+header .logo,
+header .links,
+.section,
+.upper-union{
+    display: flex;
+}
+
+/* Flex Props */
+
+body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.upper-union {
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+header {
+    justify-content: space-between;
+}
+
+header .links {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.section {
+    flex: 1;
+}
