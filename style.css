@@ -63,7 +63,10 @@ body {
     /* width: 90%; */
 }
 
-.upper-union,
+.upper-union {
+    padding: 0% 10% 5% 10%;
+}
+
 .section,
 footer {
     padding: 0 10%;
@@ -87,13 +90,11 @@ img {
 
 .box {
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
 }
 
-.square-sec {
-    margin: 2%;
-}
+
 
 /* Flex Blocks */
 
@@ -106,7 +107,8 @@ header .secondary.links,
 .right-side,
 .upper-union,
 .square-row,
-.square-sec{
+.square-sec,
+.subheader{
     display: flex;
 }
 
@@ -150,12 +152,20 @@ header .links {
 .section.sec-2{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .square-sec{
     flex-direction: column;
     align-items: center;
+}
 
+.square-subtext {
+    width: 140px;
+}
+
+.subheader {
+    justify-content: center;
 }
 
 
