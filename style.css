@@ -21,6 +21,25 @@ footer {
     background-color: #E5E7EB;
 }
 
+.primary {
+    color: #F9FAF8;
+}
+
+.primary.text {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.primary.logo {
+    font-size: 24px;
+}
+
+.secondary {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
 /* Margins, Padding, Dimensions, etc.*/
 
 body {
@@ -46,13 +65,20 @@ header,
     padding: 2% 0%;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /* Flex Blocks */
 
 body,
 header,
-header .logo,
-header .links,
+header .primary.logo,
+header .secondary.links,
 .section,
+.left-side,
+.right-side,
 .upper-union{
     display: flex;
 }
@@ -76,10 +102,21 @@ header {
 }
 
 header .links {
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 10px;
 }
 
 .section {
     flex: 1;
 }
+
+.left-side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.primary.text {
+    flex-wrap: wrap;
+}
+
