@@ -6,8 +6,13 @@ header,
 header .links,
 .section,
 footer,
-div {
+div{
     border: 1px solid red;
+}
+
+.box {
+    border: 5px solid #3882F6;
+    border-radius: 10%;
 }
 
 /* Colors & Text Formatting */
@@ -37,6 +42,16 @@ footer {
 .secondary {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.subheader {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.square-subtext {
+    text-align: center;
 }
 
 
@@ -70,6 +85,16 @@ img {
     height: auto;
 }
 
+.box {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.square-sec {
+    margin: 2%;
+}
+
 /* Flex Blocks */
 
 body,
@@ -79,7 +104,9 @@ header .secondary.links,
 .section,
 .left-side,
 .right-side,
-.upper-union{
+.upper-union,
+.square-row,
+.square-sec{
     display: flex;
 }
 
@@ -119,4 +146,17 @@ header .links {
 .primary.text {
     flex-wrap: wrap;
 }
+
+.section.sec-2{
+    flex-direction: column;
+    align-items: center;
+}
+
+.square-sec{
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
 
