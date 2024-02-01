@@ -6,7 +6,9 @@ header,
 header .links,
 .section,
 footer,
-div{
+div,
+.quote,
+.author{
     border: 1px solid red;
 }
 
@@ -44,16 +46,29 @@ footer {
     color: #E5E7EB;
 }
 
-.subheader {
+.subheader,
+.quote {
     font-size: 36px;
-    font-weight: bolder;
     color: #1F2937;
+}
+
+.subheader {
+    font-weight: bolder;
 }
 
 .square-subtext {
     text-align: center;
 }
 
+.quote {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.author {
+    font-size: 20px;
+    font-weight: bolder;
+}
 
 /* Margins, Padding, Dimensions, etc.*/
 
@@ -108,7 +123,9 @@ header .secondary.links,
 .upper-union,
 .square-row,
 .square-sec,
-.subheader{
+.subheader,
+.quote,
+.author{
     display: flex;
 }
 
@@ -117,13 +134,12 @@ header .secondary.links,
 body {
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .upper-union {
     flex-direction: column;
     align-items: center;
-    flex: 1;
 }
 
 header {
@@ -158,6 +174,7 @@ header .links {
 .square-sec{
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 .square-subtext {
@@ -166,6 +183,20 @@ header .links {
 
 .subheader {
     justify-content: center;
+}
+
+.section.sec-3 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    justify-content: flex-start;
+}
+
+.author {
+    justify-content: flex-end;
 }
 
 
