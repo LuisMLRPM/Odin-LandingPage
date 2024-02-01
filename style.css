@@ -8,7 +8,8 @@ header .links,
 footer,
 div,
 .quote,
-.author{
+.author,
+.banner{
     border: 1px solid red;
 }
 
@@ -88,14 +89,20 @@ footer {
 }
 
 header,
-div,
+.section,
 footer {
     width: 80%;
 }
 
 header,
 .section.sec-1 {
-    padding: 2% 0%;
+    padding: 2% 0% 5% 0%;
+}
+
+.section.sec-2,
+.section.sec-3,
+.section.sec-4 {
+    padding: 5% 0%;
 }
 
 img {
@@ -109,6 +116,13 @@ img {
     height: 140px;
 }
 
+
+
+
+
+.banner.text {
+    padding: 0%;
+}
 
 
 /* Flex Blocks */
@@ -125,7 +139,8 @@ header .secondary.links,
 .square-sec,
 .subheader,
 .quote,
-.author{
+.author,
+.banner{
     display: flex;
 }
 
@@ -199,5 +214,18 @@ header .links {
     justify-content: flex-end;
 }
 
+.section.sec-4 {
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
 
+.banner{
+    justify-content: space-between;
+}
+
+.banner.text {
+    justify-content: center;
+    flex-direction: column;
+}
 
