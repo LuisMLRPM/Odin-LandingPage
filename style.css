@@ -1,7 +1,7 @@
 
 /* Outlines */
 
-body,
+/* body,
 header,
 header .links,
 .section,
@@ -12,7 +12,7 @@ div,
 .banner{
     border: 1px solid red;
 }
-
+ */
 .box {
     border: 5px solid #3882F6;
     border-radius: 10%;
@@ -29,7 +29,8 @@ footer {
     background-color: #E5E7EB;
 }
 
-.primary {
+.primary,
+footer {
     color: #F9FAF8;
 }
 
@@ -71,6 +72,27 @@ footer {
     font-weight: bolder;
 }
 
+.banner {
+    background-color: #3882F6;
+    border-radius: 5px;
+}
+
+.up-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    font-weight: bold;
+    border-color: #3882F6;
+}
+
+.down-button {
+    color: #F9FAF8;
+    border-radius: 5px;
+    font-weight: bold;
+    border-color: #F9FAF8;
+    background-color: transparent;
+}
+
 /* Margins, Padding, Dimensions, etc.*/
 
 body {
@@ -83,15 +105,19 @@ body {
     padding: 0% 10% 5% 10%;
 }
 
-.section,
-footer {
+.section {
     padding: 0 10%;
 }
 
+
 header,
-.section,
-footer {
+.section
+{
     width: 80%;
+}
+
+footer {
+    width: 100%;
 }
 
 header,
@@ -99,10 +125,32 @@ header,
     padding: 2% 0% 5% 0%;
 }
 
+.up-button{
+    padding: 1% 5%;
+}
+
+.down-button {
+    padding: 0% 5%;
+    margin: 0;
+}
+
 .section.sec-2,
 .section.sec-3,
 .section.sec-4 {
     padding: 5% 0%;
+}
+
+.square-row {
+    width: 50%;
+}
+
+.quote,
+.author {
+    width: 40%;
+}
+
+.section.sec-3 {
+    width: 100%;
 }
 
 img {
@@ -116,9 +164,10 @@ img {
     height: 140px;
 }
 
-
-
-
+.banner {
+    width: 55%;
+    padding: 2%;
+}
 
 .banner.text {
     padding: 0%;
@@ -140,7 +189,8 @@ header .secondary.links,
 .subheader,
 .quote,
 .author,
-.banner{
+.banner,
+footer{
     display: flex;
 }
 
@@ -186,6 +236,11 @@ header .links {
     justify-content: center;
 }
 
+.square-row {
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
 .square-sec{
     flex-direction: column;
     align-items: center;
@@ -221,7 +276,7 @@ header .links {
 }
 
 .banner{
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .banner.text {
@@ -229,3 +284,7 @@ header .links {
     flex-direction: column;
 }
 
+footer {
+    justify-content: center;
+    align-items: center;
+}
