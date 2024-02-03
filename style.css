@@ -109,11 +109,10 @@ body {
     padding: 0 10%;
 }
 
-
 header,
-.section
-{
-    width: 80%;
+.section.sec-1,
+.section.sec-4  {
+    width: 65%;
 }
 
 footer {
@@ -165,7 +164,7 @@ img {
 }
 
 .banner {
-    width: 55%;
+    width: 65%;
     padding: 2%;
 }
 
@@ -218,6 +217,14 @@ header .links {
 
 .section {
     flex: 1;
+}
+
+.right-side {
+    flex-basis: 90%;
+}
+
+.section.sec-1{
+    gap: 100px;
 }
 
 .left-side {
